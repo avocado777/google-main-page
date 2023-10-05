@@ -1,0 +1,36 @@
+.search {
+	display: grid;
+	grid-template-columns: 44px 1fr 44px 44px;
+	height: 44px;
+	border: 1px solid #dfe1e5;
+	border-radius: 24px;
+}
+
+.search:is(:focus-within, :hover) {
+	box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+	border: none;
+}
+
+.search__icon {
+	place-self: center;
+	fill: #9aa0a6;
+}
+
+.search__input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.search__input:active {
+	border: none;
+}
+
+.search__button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
